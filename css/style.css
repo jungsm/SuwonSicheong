@@ -310,6 +310,11 @@ a {
     text-decoration: none;
     transition: all ease 0.2s;
 }
+.mayor .mayor_btn:hover{
+    background-color: #109cda;
+    color: #fff;
+    cursor: pointer;
+}
 .row1 {
     width: 820px;
     height: 331px;
@@ -348,7 +353,9 @@ height: 270px;
     padding: 15px 0px;
     height: 50px;
 }
-
+.menu_em{
+    color: #109cda;
+}
 
 .menu li a{
     letter-spacing: 0;
@@ -357,6 +364,10 @@ height: 270px;
     font-size: 14px;
    display: block;
    font-weight: bold;
+   color: #5a5f6e;
+}
+.menu li a:hover{
+    color: black;
 }
 .menu ul {
     display: flex;
@@ -370,6 +381,13 @@ height: 270px;
     width: 650px;
     top: -34px;
     left: 30px;
+}
+.menu_right a{
+    color: #5a5f6e;
+    
+}
+.menu_right a:hover{
+    color: black;
 }
 .menu_right span{
     font-family: 'S-CoreDream';
@@ -420,6 +438,9 @@ height: 270px;
     width: 100px;
     height: 51px;
     padding: 15px 0px;
+}
+.login a:hover{
+    border-bottom: 1px solid black;
 }
 .login::before{
     content: '';
@@ -1139,7 +1160,12 @@ text-align: left;}
     left: 0px;
     width: 50px;
     height: 50px;
+    cursor: pointer;
    
+}
+.icon_btn1:hover::before{
+    background-position: -190px -169px;
+    transform: rotate(-180deg);
 }
 .icon_btn2{
     float: right;
@@ -1155,10 +1181,12 @@ text-align: left;}
     top: 0px;
     left: 0px;
     width: 48px;
-    height: 65px;
+    height: 52px;
     background-image: url(../img/main_sprite.png);
-    background-position: -138px -166px;
-    
+    background-position: -138px -166px;  
+}
+.icon_btn2:hover:before{
+    background-position: -190px -166px;
 }
 .icon_btn1::before{
     position: absolute;
@@ -1166,7 +1194,7 @@ text-align: left;}
     top: 0px;
     left: 0px;
     width: 48px;
-    height: 65px;
+    height: 52px;
     background-image: url(../img/main_sprite.png);
     background-position: -85px -166px;
     
