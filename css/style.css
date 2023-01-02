@@ -448,6 +448,7 @@ height: 270px;
     width: 123px;
     height: 51px;
     padding: 15px 0px;
+    cursor:pointer;
 }
 .lang_1::before{
     width: 31px;
@@ -508,17 +509,19 @@ height: 270px;
 }
 .nav_logo{
     position: absolute;
-    top: 27px;
+    top: 0px;
 }
 .nav {
     position: relative;
-    top: -27px;
+    top: 0px;
 }
 .nav ul{
     display: flex;
     margin-left: 355px;
     max-width: 1500px;
     width: 100%;
+    position: relative;
+    top: -23px;
 }
 .nav ul li{
     padding-top: 31px;
@@ -536,7 +539,7 @@ height: 270px;
 .inputbox{
     position: relative;
     text-align: right;
-    top: -21px;
+    top: -48px;
     left: 1217px;
     width: 180px;
 }

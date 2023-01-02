@@ -13,6 +13,6 @@ function timer(){
 }
 function slide(){
 
- $('.box_1 ul li').eq(i).addClass('on');
+ $('.tab-menu li a').eq(i).addClass('a');
  $('.box_1 ul li').eq(k).removeClass('on');
 }
