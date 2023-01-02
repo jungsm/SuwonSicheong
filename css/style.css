@@ -509,9 +509,9 @@ height: 270px;
 }
 .nav_logo{
     position: absolute;
-    top: 0px;
+    top: 23px;
 }
-.nav {
+.nav{
     position: relative;
     top: 0px;
 }
@@ -539,7 +539,7 @@ height: 270px;
 .inputbox{
     position: relative;
     text-align: right;
-    top: -48px;
+    top: -49px;
     left: 1217px;
     width: 180px;
 }
@@ -879,6 +879,9 @@ text-align: left;}
     
    
 }
+.tabbox1:hover{
+    border: 1px solid  rgb(111, 178, 240);
+}
 .tabbox1{
     margin-right: 20px;
     width: 260px;
@@ -1082,6 +1085,13 @@ text-align: left;}
 .jobbox{
     position: relative;
 }
+.jobbox a:hover{
+    border: 1px solid  rgb(111, 178, 240);
+}
+.jobbox a:hover .icon{
+    background-color: #109cda;
+    color: #fff;
+}
 .jobbox a{
     font-family: 'S-CoreDream';
     display: flex;
@@ -1182,6 +1192,11 @@ text-align: left;}
     background-position: -85px -238px;
     width: 50px;   
 }
+.icon_1 a:hover:before{
+    transform: translateY(-5px);
+    transition: all ease-out 0.25s;
+}
+
 .icon_2 a::before{
     height: 50px;
     display: block;
@@ -1190,6 +1205,10 @@ text-align: left;}
     background-image: url(../img/main_sprite.png);
     background-position: -140px -238px;
     width: 50px;   
+}
+.icon_2 a:hover:before{
+    transform: translateY(-5px);
+    transition: all ease-out 0.25s;
 }
 .icon_3 a::before{
     height: 50px;
@@ -1200,6 +1219,10 @@ text-align: left;}
     background-position: -199px -238px;
     width: 50px;   
 }
+.icon_3 a:hover:before{
+    transform: translateY(-5px);
+    transition: all ease-out 0.25s;
+}
 .icon_4 a::before{
     height: 50px;
     display: block;
@@ -1208,6 +1231,10 @@ text-align: left;}
     background-image: url(../img/main_sprite.png);
     background-position: -257px -238px;
     width: 50px;   
+}
+.icon_4 a:hover:before{
+    transform: translateY(-5px);
+    transition: all ease-out 0.25s;
 }
 .icon_5 a::before{
     height: 50px;
@@ -1218,6 +1245,10 @@ text-align: left;}
     background-position: -318px -238px;
     width: 50px;   
 }
+.icon_5 a:hover:before{
+    transform: translateY(-5px);
+    transition: all ease-out 0.25s;
+}
 .icon_6 a::before{
     height: 50px;
     display: block;
@@ -1226,6 +1257,10 @@ text-align: left;}
     background-image: url(../img/main_sprite.png);
     background-position: -82px -296px;
     width: 50px;   
+}
+.icon_6 a:hover:before{
+    transform: translateY(-5px);
+    transition: all ease-out 0.25s;
 }
 .icon_7 a::before{
     height: 50px;
@@ -1236,6 +1271,10 @@ text-align: left;}
     background-position: -145px -296px;
     width: 50px;   
 }
+.icon_7 a:hover:before{
+    transform: translateY(-5px);
+    transition: all ease-out 0.25s;
+}
 .icon_8 a::before{
     height: 50px;
     display: block;
@@ -1245,6 +1284,10 @@ text-align: left;}
     background-position: -195px -296px;
     width: 50px;   
 }
+.icon_8 a:hover:before{
+    transform: translateY(-5px);
+    transition: all ease-out 0.25s;
+}
 .icon_9 a::before{
     height: 50px;
     display: block;
@@ -1253,6 +1296,10 @@ text-align: left;}
     background-image: url(../img/main_sprite.png);
     background-position: -258px -296px;
     width: 51px;   
+}
+.icon_9 a:hover:before{
+    transform: translateY(-5px);
+    transition: all ease-out 0.25s;
 }
 .title{
     margin-top: 40px;
