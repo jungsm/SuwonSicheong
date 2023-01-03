@@ -619,16 +619,14 @@ height: 270px;
     background-image: url(../img/common_sprite\ \(1\).png);
     background-position: 5px -105px;
 }
-.nav ul li a:hover.full_menu{
-    display: block;
-}
 .full_menu{
+    border-top: 1px solid rgb(235, 231, 231);
     display: none;
     left: 0;
     position: absolute;
     width: 100%;
     margin: auto;
-    z-index: 2;
+    z-index: 99999999;
     background-color: #ffffff;
 }
 .full_menu ul{
@@ -653,7 +651,56 @@ height: 270px;
     font-size: 18px;
     font-weight: bold;
 }
+.menu_box1{
+    margin: 33px auto;
+    width: 100%;
+    max-width: 1500px;
+}
+.menu_box{
+    left: 0px;
+    position: relative;
+    float: left;
+    margin-bottom: 33px;
+    width: 14.00%;
+    height: 132px;
+    padding: 0;
+    text-align: center;
+}
+.full_menu .menu_box1 span{
+    line-height: 224px;
+    font-family: 'S-CoreDream';
+    font-size: 18px;
+    font-weight: bold;
+}
+.menu_box::before{
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 45px);
+    width: 90px;
+    height: 90px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #eceff0;
+    border-radius: 12px;
+    background-color: #fff;
+    background-image: none;
+    content: '';
+    transition-property: border-color, background-color, box-shadow;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
 
+}
+.menu_box::after{
+    display: block;
+    position: absolute;
+    top: 14px;
+    left: 82px;
+    background: url(../img/common_menu_icons\ \(1\).png) no-repeat;
+    width: 42px;
+    height: 49px;
+    content: '';
+}
 /* 투뎁스 100%배경 */
 #nav>li>.width100 {
     left: 0;
