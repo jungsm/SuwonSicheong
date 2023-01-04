@@ -629,13 +629,37 @@ height: 270px;
     z-index: 99999999;
     background-color: #ffffff;
 }
-.full_menu ul{
+.full_menu .full_menuitem{
     margin: 0 auto;
     width: 100%;
     max-width: 1500px;
-
 }
-.full_menu ul li{
+.full_menu .full_menutime_1{
+    padding-top: 22px
+}
+.full_menu .full_menutime_1 li{
+    position: relative;
+    font-family: 'S-CoreDream';
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 0;
+    width: 100%;
+    margin-bottom: 0px;
+    margin-left: 18px;
+    padding-top: 0px;
+}
+.full_menu .full_menutime_1 li::before{
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: -18px;
+    background-color: #cdd3d8;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    content: '';
+}
+.full_menuitem li{
     float: none;
     display: inline-block;
     position: relative;
@@ -647,9 +671,29 @@ height: 270px;
     box-sizing: border-box;
     text-align: left;
     vertical-align: top;
-    font-family: 'S-CoreDream';
     font-size: 18px;
     font-weight: bold;
+}
+.full_menu ul li::before{
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 1px;
+    height: calc(100% - 35px);
+    background-color: #eceff0;
+    content: '';
+}
+.full_menu ul li ul li a{
+    font-family: none;
+    font-weight: 500;
+    display: inline-block;
+    font-size: 15px;
+    color: #7a7a81;
+    letter-spacing: 0;
+}
+.full_menu ul li ul li a:hover{
+    color: black;
 }
 .menu_box1{
     margin: 33px auto;
