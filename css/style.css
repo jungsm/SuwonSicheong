@@ -130,7 +130,51 @@ a {
 .bg {
     background-color: #097a84;
 }
-
+.browserWarning{
+    z-index: 101;
+    overflow: hidden;
+    position: relative;
+    line-height: 100px;
+    text-align: center;
+    background: #f6f6f6 url(../img/covid19_bg.png);
+    background-repeat: no-repeat;
+    height: 100px;
+}
+.warning_text{
+    position: absolute;
+    content: '';
+    top: 16%;
+    left: 40%;
+    width: 382px;
+    height: 68px;
+    background: url(../img/covid19_txt.png);
+}
+.warringclose{
+    cursor: pointer;
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    top: 73px;
+    left: 1558px;
+    content: '';
+}
+.warringclose span{
+    font-family: 'S-CoreDream';
+    position: relative;
+    font-weight: bold;
+    font-size: 12px;
+    left: -19px;
+    top: -40px;
+}
+.warringclose span::before{
+    background-image: url(../img/b_cornerx.png);
+    position: absolute;
+    top: 1px;
+    left: 80px;
+    content: '';
+    width: 14px;
+    height: 15px;
+}
 .box_1{
     border-radius: 50px;
     margin-right: 80px;
@@ -307,7 +351,6 @@ a {
     font-size: 15px;
     line-height: 23px;
     color: #109cda;
-    font-weight: 500;
     text-align: center;
     text-decoration: none;
     transition: all ease 0.2s;
@@ -889,9 +932,10 @@ a {
     height: 31px;
 }
 .tab_side2::before{
+    cursor: pointer;
     content: '';
     position: absolute;
-    top: 5px;
+    top: 4px;
     left: 59px;
     width: 20px;
     height: 31px;
@@ -899,6 +943,7 @@ a {
     background-position: -31px -20px;
 }
 .tab_side1::before{
+    cursor: pointer;
     content: '';
     position: absolute;
     top: 6px;
@@ -1190,8 +1235,15 @@ text-align: left;}
     position: absolute;
     top: 0;
     right: 26px;
-    font-size: 16px;
     line-height: 24px;
+}
+.more .more_text{
+    font-family: 'S-CoreDream';
+    font-size: 16px;
+    color: black;
+}
+.more .more_text:hover{
+    border-bottom: 1px solid black;
 }
 .job_1{
     display: flex;
@@ -1468,6 +1520,15 @@ text-align: left;}
     position: relative;
     top: 0px;
     left: -37px;
+    
+}
+.more_3 .more_text{
+    font-family: 'S-CoreDream';
+    font-size: 16px;
+    color: black;
+}
+.more_3 span:hover{
+    border-bottom: 1px solid black;
 }
 .more_3::before{
     position: absolute;
@@ -1488,8 +1549,15 @@ text-align: left;}
     position: relative;
     top: -1px;
     right: -452px;
-    font-size: 16px;
     line-height: 24px;
+}
+.more_1 .more_text{
+    font-family: 'S-CoreDream';
+    font-size: 16px;
+    color: black;
+}
+.more_1 .more_text:hover{
+    border-bottom: 1px solid black;
 }
 .more_1::before{
     position: absolute;
