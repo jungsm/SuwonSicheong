@@ -33,14 +33,6 @@ $(function () {
 
 
   $(".nav li").mouseleave(function () {
-    $(".full_menu").stop().slideUp(500);
+    $(".full_menu").stop().slideUp(100);
   });
-  $(".full_menu_1").mouseover(function () {
-		var i = $(this).index();
-		$(".nav li").eq(i).find(".line").css("width", "100%");
-	});
-	$(".full_menu_1").mouseleave(function () {
-		var i = $(this).index();
-		$(".nav li").eq(i).find(".line").css("width", "0%");
-	});
 });
