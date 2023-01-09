@@ -19,11 +19,17 @@
      font-weight: normal;
      font-style: normal;
 }
+
 html {
     overflow-y: scroll;
     overflow-x: hidden;
 }
-
+@media (max-width: 767px){
+    body{
+        width: 90%;
+        padding: 20px;
+    }
+}
 body {
     font-family: SCoreDream,"Malgun Gothic", "맑은 고딕", Dotum, "돋움체", Arial, sans-serif;
     color: #333;
@@ -176,39 +182,26 @@ a {
     height: 15px;
 }
 .box_1{
-    border-radius: 50px;
+  overflow: hidden;
+    border-radius: 36px;
     margin-right: 80px;
     width: 100%;
-    height: 100%px;
+    height: 630px;
     box-shadow: 12px 20px 46px 0 rgb(151 167 199 / 75%);
-    background-color: #fff;
-    
-    z-index: 1;
+       background-color: #fff;
+  z-index: 1;
+   max-width:600px; 
+
+   position: relative;
 }
-.box_1 ul li{
-    position:absolute;
-     width:100%;
-    height: 100%;
-    overflow: hidden;
+.box_4{
+    position: relative;
 }
-.on{
-    z-index: 1;
-}  
-.box_menu{
-    font-family: 'S-CoreDream';
-    font-size: 18px;
-    color: #014099;
-    font-weight: 600;
-    position: absolute;
-    left: 36px;
-    bottom: -52px;
-    z-index:1;
-}
-.box_1::before{
+.box_4::before{
     display: block;
     content: '';
     position: absolute;
-    left: -32px;
+    left: -708px;
     bottom: -75px;
     width: 639px;
     height: 213px;
@@ -217,12 +210,39 @@ a {
     z-index: 1;
 }
 .visual{
-    border-radius: 37px;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+    position: relative; 
+          transition: 0.5s;
+          display: flex;
 }
+.visual img{
+    border-radius: 36px;
+}
+.visual_left{
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 49px;
+    left: 5px;
+    top: 284px;
+    background-image: url(../img/main_thumb_prev.png);
+    background-position: -95px -166px;
+    z-index: 1;
+    cursor: pointer;
+}
+.visual_right{
+    transform: rotate(180deg);
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 49px;
+    left: 547px;
+    top: 284px;
+    background-image: url(../img/main_thumb_prev.png);
+    background-position: -95px -166px;
+    z-index: 1;
+    cursor: pointer;
+}
+
 .new_menu{
     display: flex;
     font-family: 'S-CoreDream';
@@ -232,16 +252,16 @@ a {
     bottom: 18px;
     width: 425px;
     height: 32px;
-    z-index: 1;
+    z-index: 2;
 }
 .new_text{
-    margin-left: 17px;
+    margin-left: 30px;
     font-size: 14px;
     line-height: 20px;
     color: #a81031;
 }
 .new_text1{
-    margin-left: 35px;
+    margin-left: 172px;
     font-size: 14px;
     line-height: 20px;
     color: #242a3a;
@@ -249,87 +269,22 @@ a {
 .gap{
     position: absolute;
     content: '';
-    left: 101px;
-    top: 14px;
-    width: 31px;
+    left: 122px;
+    top: 11px;
+    width: 143px;
     height: 2px;
     background: linear-gradient(to right,#ff587b, #ff587b 50%,#242a3a 50% ,#242a3a);
     vertical-align: middle;
 }
-.arrow_left{
-    position: relative;
-    padding: 4px 0px;
-    margin-left: 14px;
-    width: 20px;
-    height: 18px;
-   
-}
-.arrow_left::before{
-    display: block;
-    content: '';
-    position: absolute;
-    top: -6px;
-    left: -6px;
-    width: 20px;
-    height: 20px;
-    background-image: url(../img/main_sprite.png);
-    background-position: -1px -4px;
-}
-.stop{
-    position: relative;
-    padding: 4px 0px;
-    margin-left: 8px;
-    width: 20px;
-    height: 18px;
- 
-}
-.stop::before{
-    display: block;
-    content: '';
-    position: absolute;
-    top: -6px;
-    left: -18px;
-    width: 22px;
-    height: 20px;
-    background-image: url(../img/main_sprite.png);
-    background-position: -38px -4px;
-}
-.arrow_right{
-    position: relative;
-    padding: 4px 0px;
-    margin-left: 5px;
-    width: 20px;
-    height: 18px;
-   
-}
-.arrow_right::before{
-    display: block;
-    content: '';
-    position: absolute;
-    top: -8px;
-    left: -22px;
-    width: 20px;
-    height: 24px;
-    background-image: url(../img/main_sprite.png);
-    background-position: -54px -2px;
-}
-.box_more::before{
-    display: block;
-    content: '';
-    position: absolute;
-    top: 4px;
-    left: 259px;
-    width: 29px;
-    height: 16px;
-    background: url(../img/main_sprite.png) no-repeat -82px -5px;
-}
 .box_btn2{
-    margin-left: 90px;
+    
+    margin-left: 30px;
     font-family: 'S-CoreDream';
     font-size: 17px;
     line-height: 28px;
     color: #000000;
     font-weight: 500;
+
     
 
 }
@@ -977,23 +932,24 @@ a {
     cursor: pointer;
     content: '';
     position: absolute;
-    top: 4px;
-    left: 59px;
-    width: 20px;
-    height: 31px;
-    background-image: url(../img/main_sprite.png);
-    background-position: -31px -20px;
+    top: 116px;
+    left: 144px;
+    width: 30px;
+    height: 56px;
+    background-image: url(../img/main_thumb_prev.png);
+    background-position: -98px 166px;
+    transform: rotate(180deg);
 }
 .tab_side1::before{
     cursor: pointer;
     content: '';
     position: absolute;
-    top: 6px;
-    left: 8px;
-    width: 35px;
-    height: 31px;
-    background-image: url(../img/main_sprite.png);
-    background-position: 11px 1px;
+    top: 135px;
+    left: -719px;
+    width: 32px;
+    height: 51px;
+    background-image: url(../img/main_thumb_prev.png);
+    background-position: 29px -2px;
 }
 .tab_side1::after{
     display: block;
@@ -1079,11 +1035,14 @@ text-align: left;}
     
    
 }
+.tabbox li{
+    margin-right: 20px;
+}
 .tabbox1:hover{
     border: 1px solid  rgb(111, 178, 240);
 }
 .tabbox1{
-    margin-right: 20px;
+   
     width: 260px;
     height: 233px;
     margin-right: 20px;
@@ -1640,6 +1599,15 @@ text-align: left;}
     position: relative;
     
 }
+.new_box{
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .new_box img{ 
     display: block;
     width: 100%;
@@ -1648,9 +1616,10 @@ text-align: left;}
     background-size: cover;
     background-repeat: no-repeat;
 }
-.new_box:hover{
+.new_box img:hover{
     transform: scale(1.05);
-    overflow: hidden;
+    transition: all ease 0.5s;
+   
 }
 .sns{
     float:right;
@@ -1665,13 +1634,17 @@ text-align: left;}
     text-align: left;
 }
 .sns_box_list{
+    border-radius: 10px;
+    overflow: hidden;
     display: flex;
     width: 509px;
     height: 209px;
+    cursor: pointer;
 }
 .sns_box:hover img{
     transform: scale(1.05);
-    overflow: hidden;
+    transition: all ease 0.5s;
+
 }
 .sns_list li{
     position: relative;
@@ -1809,23 +1782,26 @@ text-align: left;}
         text-align: left;
     }
     .poto_list{
+        border-radius: 10px;
+        overflow: hidden;
         font-family: 'S-CoreDream';
         display: flex;
         width: 100%;
         height: 205px;
-       
+        cursor: pointer;
     }
     .poto_box{
-        overflow: hidden;
+      overflow: hidden;
     position: relative;
     margin-right: 23px;
     border-radius: 10px;
     width: calc((100% - 26px)/2);
     height: 100%;
+    
     }
     .poto_box:hover{
         transform: scale(1.05);
-    overflow: hidden;
+        transition: all ease 0.5s;
     }
     .poto_box img{
        width: 100%;
@@ -1873,6 +1849,7 @@ text-align: left;}
         z-index: -2;
     }
     .itv_box{
+        overflow: hidden;
     position: relative;
     width: 100%;
     height: 264px;
@@ -1882,7 +1859,7 @@ text-align: left;}
     }
     .itv_box:hover{
         transform: scale(1.05);
-         overflow: hidden;
+        transition: all ease 0.5s;
     }
     .itv_box::before{
         display: block;
@@ -2214,6 +2191,7 @@ text-align: left;}
     width: calc(100% - 80px);
 }
 .imgbox{
+    
     position: relative; 
     box-shadow: 20px 33px 30px 0 rgb(0 0 0 / 20%);
     border-radius: 10px;
@@ -2305,6 +2283,7 @@ text-align: left;}
     background-image: url(../img/main_sprite.png);
     background-position: 0px -3px;
     content: '';
+    cursor: pointer;
 }
 .footer_stop{
     position: relative;
@@ -2323,6 +2302,7 @@ text-align: left;}
     background-image: url(../img/main_icons.png);
     background-position: 94px -238px;
     content: '';
+    cursor: pointer;
 }
 .footer_arrow2{
     position: relative;
@@ -2341,6 +2321,7 @@ text-align: left;}
     background-image: url(../img/main_sprite.png);
     background-position: -54px -2px;
     content: '';
+    cursor: pointer;
 }
 .more_4{
     position: relative;
@@ -2359,12 +2340,14 @@ text-align: left;}
     background-image: url(../img/main_icons.png);
     background-position: 61px -59px;
     content: '';
+    
 }
 
 .button_side{
     position: absolute;
     top:0;
     left:284px;
+    cursor: pointer;
 }
 .button_side::after{
     position: absolute;
@@ -2404,6 +2387,7 @@ text-align: left;}
     left: 189px;
     background-image: url(../img/common_sprite.png);
     background-position: -166px 169px;
+    cursor: pointer;
 }
 .footer_center {
     font-family: 'S-CoreDream';
@@ -2512,6 +2496,7 @@ tbody,tfoot{
     text-decoration: none;
     background-color: #fcfcfd;
     word-break: keep-all;
+    cursor: pointer;
 }
 .koko::before{
     content: '';
@@ -2572,4 +2557,15 @@ tbody,tfoot{
 }
 .footer_bottom > ul > li:first-child{
     padding-left: 0;
+}
+.em_3{
+    font-size: 16px;
+    font-weight: bold;
+    color: #4268e3;
+}
+.tel_area3 span .em_2{
+    font-weight: bold;
+}
+.w3org{
+    float: right;
 }

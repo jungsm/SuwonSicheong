@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+          margin:0; 
+          padding:0;
+        }
+        li {
+          list-style: none;
+        }
+        .tabbox{
+          padding: 23px 0px 50px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+        }
+        .tabbox a{
+    line-height: 28px;
+    font-family: 'S-CoreDream';
+    display: block;
+    width: 300px;
+    height: 100%;
+    padding: 27px 30px 23px;
+    text-decoration: none;
+    word-break: break-all;
+}
+        .tabbox1 {
+   width: 260px;
+    height: 233px;
+    margin-right: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 8px 13px 28px 0 rgb(215 222 227 / 75%);
+        }.tabbox .tabbox1 { 
+          position: relative; 
+          transition: 0.5s;
+        }
+        .kind_wrap > .tabbox .tabbox1 li {
+          float:left;
+        }
+        </style>
+        <script>
+            window.onload = function() {
+              const kindWrap =  document.querySelector('.kind_wrap');
+              const slider = kindWrap.querySelector('.tabbox1');
+              const slideLis = slider.querySelectorAll('li')
+              const moveButton = kindWrap.querySelector('.arrow');
+            
+              /* ul 넓이 계산해 주기 */
+              const liWidth = slideLis[0].clientWidth;
+              const sliderWidth = liWidth * slideLis.length;
+              slider.style.width = `${sliderWidth}px` ;
+            
+              /* 리스너 설치하기 */
+              let currentIdx = 0; // 슬라이드 현재 번호
+              let translate = 0; // 슬라이드 위치 값
+              moveButton.addEventListener('click', moveSlide);
+            
+              function moveSlide(event) {
+                event.preventDefault();
+                if (event.target.className === 'visual_right') {
+                  if (currentIdx !== slideLis.length -1) {
+                    translate -= liWidth;
+                    slider.style.transform = `translateX(${translate}px)`;
+                    currentIdx += 1;
+                  }
+                } else if (event.target.className === 'visual_left') {
+                    if (currentIdx !== 0) {
+                      translate += liWidth;
+                      slider.style.transform = `translateX(${translate}px)`;
+                      currentIdx -= 1;
+                    }
+                  }
+              }
+            
+            }
+            </script>
+</head>
+<body>
+    <div class="kind_wrap">
+      <div class="tabbox df">
+        <ul class="tabbox1 df">
+         <li><a href=""><span class="team">일자리창출팀</span>
+         <p>제1기 수원 청년희망드림 프로그램 참여자 모집</p>
+        <em class="text">수원 청년 희망드림 취업지원교육은 수원일자리센터에서 운영하</em>
+        <div class="time"><span>2022.12.19</span></div>
+              </a></li>
+              </ul>
+        <ul class="tabbox1 df">
+       <li><a href=""><span class="team">일자리창출팀</span>
+         <p>제1기 수원 청년희망드림 프로그램 참여자 모집</p>
+         <em class="text">수원 청년 희망드림 취업지원교육은 수원일자리센터에서 운영하</em>
+         <div class="time"><span>2022.12.19</span></div>
+            </a></li>
+            </ul>
+            <ul class="tabbox1 df">
+             <li><a href=""><span class="team">일자리창출팀</span>
+             <p>제1기 수원 청년희망드림 프로그램 참여자 모집</p>
+            <em class="text">수원 청년 희망드림 취업지원교육은 수원일자리센터에서 운영하</em>
+            <div class="time"><span>2022.12.19</span></div>
+                  </a></li>
+                  </ul>
+        
+        </div>
+        <div class="arrow">
+            <a href="" class="visual_left">이전</a>
+            <a href="" class="visual_right">다음</a>
+        </div>
+      </div>
+</body>
+</html>
