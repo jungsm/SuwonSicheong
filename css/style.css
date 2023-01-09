@@ -2298,6 +2298,10 @@ text-align: left;}
     background-image: url(../img/main_sprite.png);
     background-position: -145px -107px;
 }
+.left:hover::before{
+    background-position: -202px -107px;
+    transform: rotate(-180deg);
+}
 .right{
     
     position: relative;
@@ -2311,6 +2315,7 @@ text-align: left;}
 }
 .right:before{
     transform: rotate(180deg);
+    display: block;
     position: absolute;
     width: 55px;
     height: 58px;
@@ -2319,6 +2324,9 @@ text-align: left;}
     left: 0px;
     background-image: url(../img/main_sprite.png);
     background-position: -145px -108px;
+}
+.button_side .right:hover::before{
+    background-position: -202px -107px;
 }
 .sick_list{
     display: flex;
@@ -2335,11 +2343,13 @@ text-align: left;}
     margin: 0 30px;
 }
 .imgbox1{
+    
     display: flex;
     width: 336px;
     height: 420px;
 }
 .title_box{
+    
     font-family: 'S-CoreDream';
     position: absolute;
     bottom: 46px;
@@ -2347,7 +2357,7 @@ text-align: left;}
     width: calc(100% - 80px);
 }
 .imgbox{
-    
+    overflow: hidden;
     position: relative; 
     box-shadow: 20px 33px 30px 0 rgb(0 0 0 / 20%);
     border-radius: 10px;
@@ -2357,6 +2367,10 @@ text-align: left;}
     background-size: cover;
     background-position: center top;
     transform: scale(1);
+    transition: all ease 0.5s;
+}
+.imgbox:hover{
+    transform: scale(1.05);
     transition: all ease 0.5s;
 }
 .imgbox::before{
@@ -2373,6 +2387,7 @@ text-align: left;}
     color: #fff;
 }
 .imgbox img{
+    overflow: hidden;
     border-radius: 10px;
     width: 320px;
     height: 404px;
