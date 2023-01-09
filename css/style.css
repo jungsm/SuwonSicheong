@@ -231,7 +231,7 @@ a {
     cursor: pointer;
 }
 .visual_right{
-    transform: rotate(180deg);
+    transform:trotate(180deg);
     content: '';
     position: absolute;
     width: 32px;
@@ -1207,7 +1207,7 @@ text-align: left;}
     box-shadow: 8px 13px 28px 0 rgb(215 222 227 / 75%);
     
 }
-.side_1 a{
+.side_1 .tabbox1 a{
     line-height: 28px;
     font-family: 'S-CoreDream';
     display: block;
@@ -1217,7 +1217,7 @@ text-align: left;}
     text-decoration: none;
     word-break: break-all;
 }
-.side_1 .team{
+.side_1 .tabbox1 .team{
     position: relative;
     font-family: 'NotoKr';
     font-size: 15px;
@@ -1233,7 +1233,7 @@ text-align: left;}
     background-color: #f65876;
     border-radius: 50%;
 }
-.side_1 p{
+.side_1 .tabbox1 p{
     width: 200px;
     overflow: hidden;
     height: 56px;
@@ -1241,7 +1241,7 @@ text-align: left;}
     line-height: 28px;
     color: #424755;
 }
-.side_1 .text{
+.side_1 .tabbox1 .text{
     overflow: hidden;
     height: 44px;
     margin-top: 7px;
@@ -1249,7 +1249,7 @@ text-align: left;}
     line-height: 0px;
     color: #858b99;
 }
-.side_1 .time{
+.side_1 .tabbox1 .time{
     margin-top: 15px;
     padding-top: 10px;
     border-top: 1px solid #d6d7da;
