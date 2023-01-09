@@ -1,6 +1,6 @@
 # Project Name
 > 프로젝트에 대한 요약설명
-> 구현화면보기 [_here_](https://jungsm.github.io/project1/)
+> 구현화면보기 [_here_](./img/main_img.png)
 
 
 ## 목차
@@ -22,7 +22,7 @@
 - 기획서의 목차작성
 - 기획서의 내용을 간락히 요약 정리
 
-## Technologies Used
+## 사용된 기술
 <!-- 사용한 기술환경 (언어와 버전을 작성) -->
 - Tech 1 - HTML5
 - Tech 2 - CSS3
