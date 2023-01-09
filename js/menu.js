@@ -32,7 +32,8 @@ $(function () {
 
 
 
-  $(".nav li").mouseleave(function () {
-    $(".full_menu").stop().slideUp(100);
-  });
+  $(".nav li,.full_menu_1").mouseleave(function () {
+		$(".full_menu").stop().slideUp();
+
+	});
 });

@@ -15,15 +15,16 @@
         }
         .tabbox{
           padding: 23px 0px 50px;
-    display: flex;
-    width: 100%;
-    height: 100%;
+          display: flex;
+           width: 100%;
+           height: 100%;
+           transition: 0.5s;
         }
         .tabbox a{
     line-height: 28px;
     font-family: 'S-CoreDream';
     display: block;
-    width: 300px;
+    width: 100%;
     height: 100%;
     padding: 27px 30px 23px;
     text-decoration: none;
@@ -36,18 +37,15 @@
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 8px 13px 28px 0 rgb(215 222 227 / 75%);
-        }.tabbox .tabbox1 { 
-          position: relative; 
-          transition: 0.5s;
         }
-        .kind_wrap > .tabbox .tabbox1 li {
+        .tabbox_wrap > .tabbox .tabbox1 li {
           float:left;
         }
         </style>
         <script>
             window.onload = function() {
-              const kindWrap =  document.querySelector('.kind_wrap');
-              const slider = kindWrap.querySelector('.tabbox1');
+              const kindWrap =  document.querySelector('.tabbox_wrap');
+              const slider = kindWrap.querySelector('.tabbox');
               const slideLis = slider.querySelectorAll('li')
               const moveButton = kindWrap.querySelector('.arrow');
             
@@ -82,7 +80,7 @@
             </script>
 </head>
 <body>
-    <div class="kind_wrap">
+    <div class="tabbox_wrap">
       <div class="tabbox df">
         <ul class="tabbox1 df">
          <li><a href=""><span class="team">일자리창출팀</span>
@@ -105,6 +103,27 @@
             <div class="time"><span>2022.12.19</span></div>
                   </a></li>
                   </ul>
+                  <ul class="tabbox1 df">
+                    <li><a href=""><span class="team">일자리창출팀</span>
+                    <p>제1기 수원 청년희망드림 프로그램 참여자 모집</p>
+                   <em class="text">수원 청년 희망드림 취업지원교육은 수원일자리센터에서 운영하</em>
+                   <div class="time"><span>2022.12.19</span></div>
+                         </a></li>
+                         </ul>
+                         <ul class="tabbox1 df">
+                          <li><a href=""><span class="team">일자리창출팀</span>
+                          <p>제1기 수원 청년희망드림 프로그램 참여자 모집</p>
+                         <em class="text">수원 청년 희망드림 취업지원교육은 수원일자리센터에서 운영하</em>
+                         <div class="time"><span>2022.12.19</span></div>
+                               </a></li>
+                               </ul>
+                               <ul class="tabbox1 df">
+                                <li><a href=""><span class="team">일자리창출팀</span>
+                                <p>제1기 수원 청년희망드림 프로그램 참여자 모집</p>
+                               <em class="text">수원 청년 희망드림 취업지원교육은 수원일자리센터에서 운영하</em>
+                               <div class="time"><span>2022.12.19</span></div>
+                                     </a></li>
+                                     </ul>
         
         </div>
         <div class="arrow">
