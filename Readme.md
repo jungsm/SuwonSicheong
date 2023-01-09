@@ -1,6 +1,6 @@
 # Project Name
 > 프로젝트에 대한 요약설명
-> 구현화면보기 [_here_](./img/main_img.png)
+> 구현화면보기 (./img/main_img.png)
 
 
 ## 목차
