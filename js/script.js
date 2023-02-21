@@ -30,5 +30,25 @@ window.onload = function() {
         }
       }
   }
+}
+function count(type)  {
+  // 결과를 표시할 element
+  const quantity = 0;
+  const resultElement = document.getElementById('result');
+
+  // 현재 화면에 표시된 값
+  let number = resultElement.innerText;
+  
+  
+  // 더하기/빼기
+  if(type === 'visual_right') {
+    number = parseInt(number)+  1 ;
+  }else if(type === 'visual_left')  {
+    number = parseInt(number) - 1;
+  }
+
+  
+  // 결과 출력
+  resultElement.innerText = number;
 
 }
