@@ -33,6 +33,9 @@
     <button> 닫기</button>
   </div>
   <div id="wrap"></div> 
+  <div id="weather1"></div>
+         <a href="https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15084084" class="
+                  weatherlink"> </a>
   <div class="browserWarning width100 pr bb">
       <div class="warning_text"></div>
       <div class="warringclose">
@@ -392,9 +395,6 @@
        <div class="box_4"></div>
        <div class="box2 pr"> 
          <div class="row1 fr">
-          <div id="weather1"></div>
-         <a href="https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15084084" class="
-                  weatherlink">출처:기상청 </a>
           <div class="mayor fl">
             <h1 class="title"><span>수원특례시장<br><em class="em">이재준</em> 입니다.</span></h1>
             
@@ -962,13 +962,9 @@
                   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
                   <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
                   <script type="text/javascript">
-                  $('.sick_list').slick({
-                    slidesToScroll: 1,
-                    
-                  });
+                  $('.sick_list').slick()
                
                   </script>
-                  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
                   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
                   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
                   <script src="js/menu.js"></script>

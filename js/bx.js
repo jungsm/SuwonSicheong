@@ -7,8 +7,8 @@ var swiper = new Swiper(".mySwiper", {
     type: "fraction",
   },
   navigation: {
-    nextEl: ".prev1",
-    prevEl: ".next1",
+    nextEl: ".next1",
+    prevEl: ".prev1",
   },
 });
 

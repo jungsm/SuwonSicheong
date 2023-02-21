@@ -1587,13 +1587,12 @@ text-align: left;}
 .next1::before{
     position: absolute;
     content: '';
-    top: -3px;
-    left: -10px;
+    top: -44px;
+    left: 0px;
     width: 48px;
     height: 52px;
     background-image: url(../img/main_sprite.png);
-    background-position: -138px -166px;  
-    transform: rotate(180deg);
+    background-position: -138px -166px;
 }
 .next1:hover:before{
     background-position: -190px -166px;
@@ -1601,12 +1600,13 @@ text-align: left;}
 .prev1::before{
     position: absolute;
     content: '';
-    top: -4px;
-    left: -13px;
+    top: -51px;
+    left: 0px;
     width: 48px;
     height: 52px;
     background-image: url(../img/main_sprite.png);
-    background-position: -139px -168px;
+    background-position: -138px -168px;
+    transform: rotate(180deg);
 }
 .iconlist{
     position: absolute;
@@ -2926,15 +2926,15 @@ tbody,tfoot{
 }
 #weather1{
     font-weight: bold;
-    text-align: end;
+    text-align: center;
     font-size: 1rem;
     color: lightskyblue;
+;
 }
 #weather1 span{
-    padding-right: 10px;
+    padding-right: 50px;
 }
 .weatherlink{
+    font-size: 12px;
     color: lightskyblue;
-    float: right;
-    padding-top: 5px;
 }
