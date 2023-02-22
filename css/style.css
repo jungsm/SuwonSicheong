@@ -1626,12 +1626,12 @@ text-align: left;}
     overflow: hidden;
 }
 .icon_1 a::before{
-    height: 50px;
+    height: 62px;
     display: block;
     content : '';
     margin: -27px 50px auto;
     background-image: url(../img/main_sprite.png);
-    background-position: -85px -238px;
+    background-position: -85px -234px;
     width: 50px;   
 }
 .icon_1 a:hover:before{
@@ -1640,12 +1640,12 @@ text-align: left;}
 }
 
 .icon_2 a::before{
-    height: 50px;
+    height: 62px;
     display: block;
     content : '';
     margin: -27px 50px auto;
     background-image: url(../img/main_sprite.png);
-    background-position: -140px -238px;
+    background-position: -140px -234px;
     width: 50px;   
 }
 .icon_2 a:hover:before{
@@ -1653,12 +1653,12 @@ text-align: left;}
     transition: all ease-out 0.25s;
 }
 .icon_3 a::before{
-    height: 50px;
+    height: 62px;
     display: block;
     content : '';
     margin: -27px 50px auto;
     background-image: url(../img/main_sprite.png);
-    background-position: -199px -238px;
+    background-position: -199px -234px;
     width: 50px;   
 }
 .icon_3 a:hover:before{
@@ -1666,12 +1666,12 @@ text-align: left;}
     transition: all ease-out 0.25s;
 }
 .icon_4 a::before{
-    height: 50px;
+    height: 62px;
     display: block;
     content : '';
     margin: -27px 50px auto;
     background-image: url(../img/main_sprite.png);
-    background-position: -257px -238px;
+    background-position: -257px -234px;
     width: 50px;   
 }
 .icon_4 a:hover:before{
@@ -1679,12 +1679,12 @@ text-align: left;}
     transition: all ease-out 0.25s;
 }
 .icon_5 a::before{
-    height: 50px;
+    height: 62px;
     display: block;
     content : '';
     margin: -27px 50px auto;
     background-image: url(../img/main_sprite.png);
-    background-position: -318px -238px;
+    background-position: -318px -234px;
     width: 50px;   
 }
 .icon_5 a:hover:before{
@@ -1692,7 +1692,7 @@ text-align: left;}
     transition: all ease-out 0.25s;
 }
 .icon_6 a::before{
-    height: 50px;
+    height: 62px;
     display: block;
     content : '';
     margin: -27px 50px auto;
@@ -1705,7 +1705,7 @@ text-align: left;}
     transition: all ease-out 0.25s;
 }
 .icon_7 a::before{
-    height: 50px;
+    height: 62px;
     display: block;
     content : '';
     margin: -27px 50px auto;
@@ -1718,7 +1718,7 @@ text-align: left;}
     transition: all ease-out 0.25s;
 }
 .icon_8 a::before{
-    height: 50px;
+    height: 62px;
     display: block;
     content : '';
     margin: -27px 50px auto;
@@ -1731,7 +1731,7 @@ text-align: left;}
     transition: all ease-out 0.25s;
 }
 .icon_9 a::before{
-    height: 50px;
+    height: 62px;
     display: block;
     content : '';
     margin: -27px 50px auto;
