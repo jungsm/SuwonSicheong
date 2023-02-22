@@ -1587,7 +1587,7 @@ text-align: left;}
 .next1::before{
     position: absolute;
     content: '';
-    top: -44px;
+    top: 0px;
     left: 0px;
     width: 48px;
     height: 52px;
@@ -1600,7 +1600,7 @@ text-align: left;}
 .prev1::before{
     position: absolute;
     content: '';
-    top: -51px;
+    top: 0px;
     left: 0px;
     width: 48px;
     height: 52px;
