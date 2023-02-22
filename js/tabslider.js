@@ -16,7 +16,6 @@ function moveSlide(num){
 nextBtn.addEventListener('click',function(){
     if(currentIdx < slideCount - 21){
         moveSlide(currentIdx + 1);
-        console.log(currentIdx);
     }else{
         moveSlide(0);
     }

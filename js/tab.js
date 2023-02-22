@@ -1,4 +1,4 @@
-let tablist1 = document.querySelector("tabboxlist1")
+
 
 
 $('.tabboxlist2,.tabboxlist3,.tabboxlist1').hide();
