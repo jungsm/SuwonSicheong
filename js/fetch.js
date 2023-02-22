@@ -65,5 +65,6 @@ async function setPosts() {
     <span>바람:${cast.wind}/ms</span>
   `;
 	castEl.appendChild(tr);
+	castBox.appendChild(castEl);
 }
 setPosts();
