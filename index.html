@@ -25,6 +25,7 @@
   <link rel="icon" href="./icon/favicon-16x16.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 
 </head>
 <body>
@@ -856,6 +857,7 @@
         </div>
         <div class="banner width100 pr">
           <div class="width1400 pr">
+            <div class="bannerslider">
            <a><img src="img/banner1.png" alt=""></a>
            <a><img src="img/banner2.gif" alt=""></a>
            <a><img src="img/banner3.gif" alt=""></a>
@@ -864,9 +866,26 @@
            <a><img src="img/banner6.png" alt=""></a>
            <a><img src="img/banner7.gif" alt=""></a>
            <a><img src="img/banner10.gif" alt=""></a>
+           <a><img src="img/banner1.png" alt=""></a>
+           <a><img src="img/banner2.gif" alt=""></a>
+           <a><img src="img/banner3.gif" alt=""></a>
+           <a><img src="img/banner4.gif" alt=""></a>
+           <a><img src="img/banner5.gif" alt=""></a>
+           <a><img src="img/banner6.png" alt=""></a>
+           <a><img src="img/banner7.gif" alt=""></a>
+           <a><img src="img/banner10.gif" alt=""></a>
+           <a><img src="img/banner1.png" alt=""></a>
+           <a><img src="img/banner2.gif" alt=""></a>
+           <a><img src="img/banner3.gif" alt=""></a>
+           <a><img src="img/banner4.gif" alt=""></a>
+           <a><img src="img/banner5.gif" alt=""></a>
+           <a><img src="img/banner6.png" alt=""></a>
+           <a><img src="img/banner7.gif" alt=""></a>
+           <a><img src="img/banner10.gif" alt=""></a>
+           </div>
            <div class="controlbox">
             <div class="count">
-              <span class="context">14</span>
+              <span class="context">1</span>
               <span class="context2">/18</span>
               <button type="button" class="footer_arrow"></button>
               <button type="button" class="footer_stop"></button>
@@ -962,11 +981,25 @@
                   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
                   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
                   <script type="text/javascript">
-                  $('.sick_list').slick();
+                  $('.sick_list').slick({
+                    infinite: true,
+                    slidesToScroll: 1,
+                  });
                
                   </script>
                   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
                   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+                  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+                  <script>
+                    $(document).ready(function(){
+                        $('.bannerslider').bxSlider({
+                  auto: true,
+                  slideWidth: 100
+                  
+                });
+                    });
+                  </script>
                   <script src="js/menu.js"></script>
                   <script src="js/01.js"></script>
                   <script src="js/tab.js"></script>

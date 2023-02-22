@@ -2469,6 +2469,7 @@ text-align: left;}
 .slick-track{
     width: 10000px !important;
     left: 1049px !important;
+    height: 700px;
 }
 button.slick-prev.slick-arrow{
     font-size: 0;
@@ -2480,6 +2481,7 @@ button.slick-prev.slick-arrow{
     left: -150px;
     background-image: url(../img/main_sprite.png);
     background-position: -145px -107px;
+    cursor: pointer;
    
 }
 button.slick-prev.slick-arrow:hover{
@@ -2493,6 +2495,7 @@ button.slick-prev.slick-arrow:hover{
     background-image: url(../img/main_sprite.png);
     background-position: -202px -107px;
     transform: rotate(180deg);
+    cursor: pointer;
 }
 button.slick-next.slick-arrow{
     font-size:0;
@@ -2506,6 +2509,7 @@ button.slick-next.slick-arrow{
     background-image: url(../img/main_sprite.png);
     background-position: -145px -108px;
     transform: rotate(180deg);
+    cursor: pointer;
 }
 button.slick-next.slick-arrow:hover{
     display: block;
@@ -2518,6 +2522,7 @@ button.slick-next.slick-arrow:hover{
     background-image: url(../img/main_sprite.png);
     background-position: -204px -108px;
     transform: rotate(360deg);
+    cursor: pointer;
     
 }
 .imgbox_list{
@@ -2713,6 +2718,40 @@ button.slick-next.slick-arrow:hover{
     background-image: url(../img/main_sprite.png);
     background-position: 10px 20px;
 
+}
+.bannerslider a {
+    width: 150px !important;
+}
+.bx-wrapper{
+    max-width: 1340px !important;
+    margin-bottom: 0px !important;
+    border: none !important; 
+    box-shadow:none !important;
+}
+a.bx-next{
+    left: 91rem;
+    position: absolute;
+    height: 28px !important;
+    width: 20px !important;
+    background-image: url(../img/main_sprite.png) !important;
+    background-position: -33px -20px !important;
+    content: '';
+    cursor: pointer;
+}
+a.bx-prev{
+    left: 88rem !important;
+    font-size: 0;
+    width: 17px !important;
+    height: 34px !important;
+    content: '';
+    top: 367px;
+    left: -150px;
+    background-image: url(../img/main_sprite.png) !important;
+    background-position: 0px 3px !important;
+    cursor: pointer;
+}
+.bx-wrapper .bx-pager{
+    display: none;
 }
 .footer_top {
     display: flex;
